@@ -3,10 +3,12 @@
 
 <head>
     <meta charset="UTF-8">
-    <link href='https://fonts.googleapis.com/css?family=Raleway:400, 600' rel='stylesheet' type='text/css'>
+    <title>Cookies R Us</title>
+    <link href='https://fonts.googleapis.com/css?family=Raleway:400,600' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.4.0/css/all.css">
-    <link href='css/cathy.css' rel='stylesheet' type='text/css' />
+    <link href='css/cathy.css' rel='stylesheet' type='text/css'>
 </head>
+
 
 <body>
     <header>
@@ -35,14 +37,6 @@
         </div>
     </nav>
 
-    <!-- <div class="flex-container">
-        <ul class="menubar">
-            <li class="menuitem"><a href="#" class="menulink">Home</a></li>
-            <li class="menuitem"><a href="#" class="menulink">Gingerbread Cookies</a></li>
-            <li class="menuitem"><a href="#" class="menulink">Cookie2</a></li>
-            <li class="active_menuitem"><a href="#" class="menulink">Contact Us!</a></li>
-        </ul>
-    </div> -->
 
     <div class="title">
         <h1>SUBSCRIBE</h1>
@@ -50,17 +44,17 @@
 
 
     <div class="container">
-        <form id="contact" action="" method="post">
+        <form id="contact" action="/" method="post">
 
-            <box>
-                <label for="name">Your Name</label> <input type="text" id="text" name="text" required /> </box>
+        <fieldset>
+        <label for="name">Your Name</label> <input type="text" id="name" name="text" required /> </fieldset>
 
-            <box>
-                <label for="Email">Your Email Address</label> <input type="Email" id="text" name="text" required /> </box>
+        <fieldset>
+        <label for="Email">Your Email Address</label> <input type="Email" id="Email" name="text" required /> </fieldset>
 
-            <box>
-                <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
-            </box>
+        <fieldset>
+        <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+            </fieldset>
 
         </form>
     </div>
@@ -94,16 +88,15 @@
     </div>
 
     <div class="container">
-        <form id="contact" action="" method="post">
+        <form id="recipe-submission" action="/" method="post">
 
-            <box>
-                <label for="file">Upload file here</label> <input type="file" id="text" name="text" required /> </box>
+        <fieldset>
+        <label for="file">Upload file here</label> 
+        <input type="file" id="file" name="text" required /> </fieldset>
 
-            <box>
-
-                <box>
-                    <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
-                </box>
+                <fieldset>
+                    <button name="submit" type="submit" id="recipe-submit" data-submit="...Sending">Submit</button>
+                </fieldset>
 
         </form>
     </div>
