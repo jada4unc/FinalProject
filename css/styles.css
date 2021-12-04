@@ -1,0 +1,287 @@
+    main {
+        padding: 25px;
+        padding-top: 0;
+    }
+    
+    footer {
+        background-color: #f9c1cb;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        width: 100%;
+        padding: 20px;
+        margin-top: 50px;
+    }
+    
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Raleway', sans-serif;
+    }
+    /*Home Hero*/
+    
+    .hero {
+        width: 100%;
+        height: 40vh;
+        background-image: url('https://images.unsplash.com/photo-1597733153203-a54d0fbc47de?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1580&q=80');
+        background-color: #99DAff;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .hero-text {
+        width: fit-content;
+        margin: 3rem;
+        background-color: white;
+    }
+    
+    .hero-text h1 {
+        font-size: 3rem;
+    }
+    
+    .feature-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 10px;
+        padding: 15px;
+    }
+    
+    .left {
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+    
+    .feature {
+        display: flex;
+        max-width: 45%;
+        margin: 0 auto;
+        padding: 10px;
+        margin-top: 20px;
+        background-color: #99DAff;
+    }
+    
+    .featureitem {
+        object-fit: cover;
+        overflow: hidden;
+        box-sizing: border-box;
+        margin: 5px;
+        min-width: 31%;
+        height: auto;
+        flex: 1 1 auto;
+    }
+    
+    .featureimg {
+        width: 100%;
+        border-radius: 10px;
+    }
+    
+    .feature-title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .feature:hover,
+    .feature:focus {
+        opacity: 1;
+        transition: .5s ease;
+        background-color: #38b6FF;
+    }
+    
+    .right {
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+    
+    .about-title {
+        padding-top: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .about {
+        background-color: #99DAff;
+        padding: 20px;
+    }
+    /*Fonts*/
+    
+    h1,h2 {
+        font-family: 'Yeseva One', cursive;
+        font-size: 2rem;
+        margin: 10px;
+        font-weight: bold;
+        color: black;
+        text-transform: uppercase;
+    }
+    
+    h3,
+    h4,
+    h5,
+    h5 {
+        font-family: 'Raleway', sans-serif;
+    }
+    
+    p {
+        font-size: 1rem;
+        text-align: left;
+        margin: 10px;
+    }
+    /*Nav*/
+    
+    .flex-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+    
+    .menuitem {
+        background: #99DAff;
+        width: auto;
+        padding: 15px 15px;
+        border-radius: 10px;
+        margin: 10px;
+        text-align: center;
+    }
+    
+    .active_menuitem {
+        background: #38b6ff;
+        width: auto;
+        padding: 15px 15px;
+        border-radius: 10px;
+        margin: 10px;
+        text-align: center;
+    }
+    
+    .menulink {
+        color: black;
+        text-decoration: none;
+    }
+    
+    .menuitem:hover,
+    .menuitem:focus {
+        background: #38b6ff;
+        transition: 600ms;
+    }
+    
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+    
+    nav ul li {
+        display: inline-block;
+        padding: 8px;
+    }
+    /*Header*/
+    
+    .header-container {
+        background-color: #f9c1cb;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        padding: 25px;
+    }
+    
+    header img {
+        height: 50px;
+        width: 50px;
+    }
+    /*Main*/
+    
+    .cookie-title-div h1 {
+        text-align: center;
+        grid-area: cookie-title;
+    }
+    
+    .pb-blossom-grid-container {
+        padding: 25px;
+        padding-bottom: 0px;
+    }
+    
+    .cookie-img-div {
+        grid-area: cookie-img;
+        padding: .5rem;
+        max-width: 100%;
+        height: fit-content;
+        margin: 0;
+    }
+    
+    .img-wrap {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        padding: .5rem;
+        margin: 0 auto;
+    }
+    
+    img {
+        object-fit: cover;
+        width: 100%;
+        border-radius: 5px;
+        max-height: 30vh;
+    }
+    
+    .ingredients-div {
+        grid-area: ingredients;
+        padding: .5rem;
+    }
+    
+    .break-line {
+        background-color: #f9c1cb;
+        margin-top: 20px;
+        height: .3rem;
+    }
+    
+    .directions-div {
+        grid-area: directions;
+        padding: .5rem;
+    }
+    
+    .adapted-div {
+        grid-area: adapted;
+        padding: .5rem;
+    }
+    /*Media Query 500px*/
+    
+    @media only screen and (max-width: 700px) {
+        .pb-blossom-grid-container {
+            display: grid;
+            grid-template-areas: "cookie-img cookie-img" "ingredients directions" "adapted adapted";
+            padding: 25px;
+            padding-bottom: 0px;
+            grid-gap: 1.5rem;
+        }
+        .break-line {
+            background-color: transparent;
+            margin-top: 0px;
+            height: 0;
+        }
+        .feature-container {
+            display: flex;
+            flex-direction: column;
+            padding: 30px;
+        }
+    }
+    /*Media Query 700px*/
+    
+    @media only screen and (min-width: 701px) {
+        .pb-blossom-grid-container {
+            display: grid;
+            grid-template-areas: "cookie-img ingredients" "directions directions" "adapted adapted";
+            padding: 5rem;
+            padding-top: 25px;
+            padding-bottom: 0;
+            grid-gap: 1rem;
+        }
+        img {
+            max-height: 70vh;
+        }
+    }

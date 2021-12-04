@@ -1,0 +1,259 @@
+main {
+    padding: 25px;
+    padding-top: 0;
+}
+
+footer {
+    background-color: #f9c1cb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+/*Fonts*/
+
+h1,h2 {
+    font-family: 'Yeseva One', cursive;
+    font-size: 2rem;
+    margin: 10px;
+    font-weight: bold;
+    color: black;
+    text-transform: uppercase;
+}
+h3,
+h4,
+h5,
+h5 {
+    font-family: 'Raleway', sans-serif;
+}
+
+p {
+    font-size: 1rem;
+    text-align: left;
+    margin: 10px;
+}
+
+
+/*Nav*/
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.menuitem {
+    background: #99DAff;
+    width: auto;
+    padding: 15px 15px;
+    border-radius: 10px;
+    margin: 10px;
+    text-align: center;
+}
+
+.active_menuitem {
+    background: #38b6ff;
+    width: auto;
+    padding: 15px 15px;
+    border-radius: 10px;
+    margin: 10px;
+    text-align: center;
+}
+
+.menulink {
+    color: black;
+    text-decoration: none;
+}
+
+.menuitem:hover,
+.menuitem:focus {
+    background: #38b6ff;
+    transition: 600ms;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 8px;
+}
+
+
+/*Header*/
+
+.header-container {
+    background-color: #f9c1cb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    padding: 25px;
+}
+
+header img {
+    height: 50px;
+    width: 50px;
+}
+
+
+/*Main*/
+
+.cookie-title-div h1 {
+    text-align: center;
+    grid-area: cookie-title;
+}
+
+.pb-blossom-grid-container {
+    padding: 25px;
+    padding-bottom: 0px;
+}
+
+.cookie-img-div {
+    grid-area: cookie-img;
+    padding: .5rem;
+    max-width: 100%;
+    height: fit-content;
+    margin: 0;
+}
+
+.img-wrap {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    padding: .5rem;
+    margin: 0 auto;
+}
+
+img {
+    object-fit: cover;
+    width: 100%;
+    border-radius: 5px;
+    max-height: 30vh;
+}
+
+.ingredients-div {
+    grid-area: ingredients;
+    padding: .5rem;
+}
+
+.break-line {
+    background-color: #f9c1cb;
+    margin-top: 20px;
+    height: .3rem;
+}
+
+.directions-div {
+    grid-area: directions;
+    padding: .5rem;
+}
+
+.adapted-div {
+    grid-area: adapted;
+    padding: .5rem;
+}
+
+
+/* Gingerbread Cookies */
+
+.large-box {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 10px;
+    row-gap: 10px;
+    padding: 10px;
+}
+
+.ingredients {
+    color: black;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    padding: 15px;
+    margin: 2%;
+}
+
+.gingerbread {
+    object-fit: cover;
+    overflow: hidden;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    padding: 15px;
+    margin: 2%;
+    width: 100%;
+}
+
+.recipe-container {
+    background-color: white;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    padding: 15px;
+    margin: 2%;
+}
+
+
+/*Media Query 500px*/
+
+@media only screen and (max-width: 700px) {
+    .pb-blossom-grid-container {
+        display: grid;
+        grid-template-areas: "cookie-img cookie-img" "ingredients directions" "adapted adapted";
+        padding: 25px;
+        padding-bottom: 0px;
+        grid-gap: 1.5rem;
+    }
+    .break-line {
+        background-color: transparent;
+        margin-top: 0px;
+        height: 0;
+    }
+    .large-box {
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+    }
+    .gingerbread {
+        height: 40vh;
+        flex-wrap: wrap;
+    }
+}
+
+
+/*Media Query 700px*/
+
+@media only screen and (min-width: 701px) {
+    .pb-blossom-grid-container {
+        display: grid;
+        grid-template-areas: "cookie-img ingredients" "directions directions" "adapted adapted";
+        padding: 5rem;
+        padding-top: 25px;
+        padding-bottom: 0;
+        grid-gap: 1rem;
+    }
+    img {
+        max-height: 70vh;
+    }
+}
